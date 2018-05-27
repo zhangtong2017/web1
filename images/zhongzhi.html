@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>中智首页</title>
+	<style>
+		*{
+			padding:0px;
+			margin:0px;
+		}
+		a{
+			text-decoration:none;
+		}
+		.header{
+			height:173px;
+			background-color:#eeeeef;
+		}
+		.logo{
+			padding-top:30px;
+			text-align:center;
+			height:95px;
+		}
+		.ul1{
+			width:670px;
+			height:45px;
+			background-color:#fff;
+			list-style-type:none;
+			margin:0 auto;
+			border-radius:23px;
+		}
+		.ul1 li{
+			float:left;
+			height:45px;
+			padding: 0 30px;
+			line-height:45px;
+			background: url(images./shuxian.png) no-repeat right center;
+			font-family:微软雅黑;
+			font-size:14px;
+		}
+		.ul1 li:first-child{
+			height:42px;
+			display:inline-block;
+			border-bottom:3px solid #1e50ae;
+		}
+		.ul1 li:last-child{
+			background:none;
+		}
+		.top{
+			height:405px;
+			background:url(images./pingtai.png);
+		}
+		.service{
+			font-family:微软雅黑;
+			font-size:36px;
+			text-align:center;
+			padding-top:60px;
+		}
+		.service1{
+			text-align:center;
+			padding-top:23px;
+			color:black;
+		}
+		.div1{
+			height:615px;
+			padding-top:60px;
+			padding-left:85px;
+			float:left;
+		}
+		.div1 div{
+			float:left;
+			height:300px;
+		}
+		.div1 img{
+			padding-left:160px;
+		}
+		.div1 ul{
+			font-family:微软雅黑;
+			font-size:14px;
+			color:#c8c8c8;
+			margin-left:195px;
+		}
+		.div1 p{
+			font-family:微软雅黑;
+			font-size:16px;
+			margin-left:195px;
+		}
+		.solution{
+			margin-top:675px;
+			background-image:url(images/beijing.png);
+			height: 711px;
+			width:100%;
+		}
+		.solution1{
+			font-size: 34px;
+			padding-top: 68px;
+			color:#f6f6f8;
+			text-align: center;
+		}
+		.solution2{
+			font-size: 31.45px;
+			color:#f6f6f8;
+			margin-top: 22px;
+			margin-bottom: 76px;
+			text-align: center; 
+		}
+		.solution3{
+			padding-top: 128px;
+			padding-left: 178px;
+			width:63px;
+			float: left;
+		}
+		.solution4{
+			padding-right: 53px;
+			float:left;
+			width:230px;
+			height: 298px;
+		}
+		.solution7{
+			float:left;
+			width:230px;
+			height: 298px;
+		}
+		.solution5{
+			float:left;
+			padding-top: 129px;
+			padding-left:50px;
+		}
+		.solution6{
+			font-family:微软雅黑;
+			float: left;
+			margin-top:  79px;
+			margin-left: 663px;
+			background-color: none;
+			border:1px solid #f5f5f7;
+			border-radius: 27px;
+			font-size: 20px;
+			width: 238px;
+			height: 40px;
+			text-align: center;
+			padding-top: 15px;
+			margin-bottom: 64px;
+			color:#f5f5f7；
+		}
+		.div3{
+			height:185px;
+			float:left;
+			margin-left:650px;
+		}
+		.div4{
+			height:910px;
+		}
+		.div4 img{
+			float:left;
+			padding-right:160px;
+		}
+		.div4 div{
+			width:505px;
+			font-family:微软雅黑;
+			font-size:14px;
+			color:#969696;
+			line-height:33px;
+			float:left;
+		}
+		.some{
+			width:550px;
+			height:260px;
+			padding-top:100px;
+			padding-left:256px;
+		}
+		.some1{
+			padding-left:47px;
+			padding-top:100px;
+		}
+		.div4 ul{
+			list-style-type:none;
+			float:left;
+		}
+		.div4 li{
+			padding-bottom:20px;
+			padding-top:15px;
+		}
+		.div5{
+			width:100%;
+			height:100px;
+			background-color:#f5f5f5;
+			margin-top:700px;
+		}
+		.div5 div{
+			width:45px;
+			height:102px;
+			float:left;
+			text-align:center;
+		}
+		.div5 div:first-child{
+			padding-left:226px;
+		}
+		.div5  p{
+			font-family:微软雅黑;
+			font-size:16px;
+			font-weight:light;
+			float:left;
+			padding-top:31px;
+			padding-left:23px;
+		}
+		.div5 span{
+			font-size:13px;
+			font-weight:light;
+		}
+		.div5 img{
+			padding-top:28px;
+		}
+		.div6{
+			background-color:#323232;
+			width:100%;
+			height:386px;
+			float:left;
+		}
+		.div6 div{
+			padding-top:75px;
+			float:left;
+		}
+		.div6 ul{
+			list-style-type:none;
+			width:175px;
+		}
+		.div6 li{
+			font-family:微软雅黑;
+			font-size:14px;
+			color:#777777;
+			padding-bottom:29px;
+		}
+		.div6 li:first-child{
+			font-size:18px;
+		} 
+		.div6 a{
+			font-family:微软雅黑;
+			font-weight:light;
+			border-right:1px solid #777777;
+			color:#777777;
+			font-size:14px;
+			padding:0 10px;
+		}
+		.div6 a:last-child{
+			border:none;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="images./logo.png">
+		</div>
+		<ul class="ul1">
+			<li>
+				<a href="" class="first">首页</a>
+			</li>
+			<li>
+				<a href="">关于我们</a>
+			</li>
+			<li>
+				<a href="">中智服务</a>
+			</li>
+			<li>
+				<a href="">解决方案</a>
+			</li>
+			<li>
+				<a href="">最新资讯</a>
+			</li>
+			<li class="last">
+				<a href="">联系我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="top"></div>
+	<div>
+		<p class="service">服务项目</p>
+		<p class="service1">
+			<img src="images./yingwen.png">
+		</p>
+	</div>
+		<div class="div1">
+			<div>
+				<img src="images./gongshang.png">
+					<p>工商代理</p>
+					<ul>
+						<li>公司注册</li>
+						<li>公司注册地址</li>
+						<li>分公司注册</li>
+						<li>外资注册</li>
+						<li>股权变更</li>
+						<li>公司注销</li>
+					</ul>
+			</div>
+			<div>
+				<img src="images./caiwu.png">
+					<p>财务代理</p>
+					<ul>
+						<li>代理记账</li>
+						<li>税务筹划</li>
+						<li>审计服务</li>
+					</ul>
+			</div>
+			<div>
+				<img src="images./zizhi.png">
+					<p>资质服务</p>
+					<ul>
+						<li>各类许可证</li>
+						<li>资质审批</li>
+						<li>高新企业</li>
+						<li>商标专利</li>
+					</ul>
+			</div>
+			<div>
+				<img src="images./tese.png">
+					<p>特色服务</p>
+					<ul>
+						<li></li>
+					</ul>
+			</div>
+			<div>
+				<img src="images./gongjijin.png">
+					<p>公积金社保代理</p>
+			</div>
+			<div>
+				<img src="images./bangongshi.png">
+					<p>办公室租赁</p>
+			</div>
+			<div>
+				<img src="images./yingyezhizhao.png">
+					<p>营业执照转让</p>
+			</div>
+			<div>
+				<img src="images./falv.png">
+					<p>法律服务</p>
+			</div>
+		</div>
+		<div class="solution">
+		<div class="solution1">
+			<h3>解决方案</h3>
+		</div>
+		<div class="solution2">
+			<B>SOLUTION</B>
+		</div>
+		<div class="solution3">
+			<img src="images./xiaoyuhao.png">
+		</div>
+		<div class="solution4">
+			<img src="images./zhuce.png">
+		</div>
+		<div class="solution4">
+			<img src="images./tuandui.png">
+		</div>
+		<div class="solution4">
+			<img src="images./hangzhou.png">
+		</div>
+		<div class="solution7">
+			<img src="images./fuwu.png"> 
+		</div>
+		<div class="solution5">
+			<img src="images./dayuhao.png">
+		</div>
+		<div class="solution6">
+			<p style="color:#f5f5f7">了解更多>></p>
+		</div>
+		<div class="div3">
+			<p class="service">最新资讯</p>
+			<p class="service1">
+				<img src="images./lastest.png">
+			</p>
+		</div>
+		<div class="div4">
+			<img src="images./qiu.png" style="padding-left:195px">
+			<div>
+				<img src="images./jiaoyi.png">
+			</div>
+			<div>要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商的介入就能分析实时报价、进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界面来管理他们的账户，并能轻松查看图标和报告</div>
+			<div style="padding-top:33px"><img src="images./xiangqing.png"></div>
+			<div class="some">
+				<ul>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+				</ul>
+			</div>
+			<div class="some1">
+				<ul>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+					<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</li>
+					<p style="border:1px dashed"></p>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="div5">
+			<div class="first">
+				<img src="images./rengzheng.png">
+			</div>
+			<p>资质认证<br/>
+			<span>服务商100%实名认证</span>
+			</p>
+			<div>
+				<img src="images./juxing.png">
+			</div>
+			<div>
+				<img src="images./zhifu.png">
+			</div>
+				<p>支付安全
+				<br/>
+				<span>明码标价支付及信息安全</span>
+			</p>
+			<div>
+				<img src="images./juxing.png">
+			</div>
+			<div>
+				<img src="images./baoxian.png">
+			</div>
+			<p>保险赔付<br/>
+			<span>为您提供担保保险付款</span>
+			</p>
+			<div>
+				<img src="images./juxing.png">
+			</div>
+			<div>
+				<img src="images./shouhou.png">
+			</div>
+			<p>售后无忧<br/>
+			<sapn style="font-size:13px">
+			服务出问题经理全程跟进
+			</sapn> 
+			</p>
+		</div>
+		<div class="div6">
+			<div style="padding-left:183px">
+				<ul>
+					<li>中智信元</li>
+					<li>加入我们</li>
+					<li>联系我们</li>
+					<li>最新动态</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>订单服务</li>
+					<li>支付方式</li>
+					<li>退款说明</li>
+					<li>购买流程</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>售后服务</li>
+					<li>在线问答</li>
+					<li>服务中心</li>
+					<li>售后政策</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>常见问题</li>
+					<li>新手帮助</li>
+					<li>支付帮助</li>
+					<li>开具发票</li>
+				</ul>
+			</div>
+			<div>
+				<img src="images./erweima.png">
+			</div>
+			<div style="padding-left:80px">
+				<img src="images./sao.png">
+			</div>
+			<div style="padding-left:0px">
+				<img src="images./xain.png">
+			</div>
+			<div style="padding-left:40px">
+				<p>咨询热线：400-000-0000</p>
+				<p><img src="images./qq.png">1234567888@qq.com</p>
+				<p><img src="images./weixin.png">某某企业网站官方微信</p>
+			</div>
+			<div style="padding-top:30px">
+				<a href="" style="margin-left:414px">首页</a>
+				<a href="">工商代理</a>
+				<a href="">财务代记账</a>
+				<a href="">股权交易与变更</a>
+				<a href="">企业贷款</a>
+				<a href="">办公室租赁</a>
+				<a href="">社保公积金代理</a>
+				<a href="">法律服务</a>		
+			</div>
+			<div style="padding:15px 0px 0px 642px">
+				<img src="images./last.png">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
